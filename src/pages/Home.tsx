@@ -17,6 +17,11 @@ const Home = () => {
           onClick={() => navigate('/usereducer-demo')}>
             useReducer Demo
         </button>
+        <button
+          style={globalStyles.button}
+          onClick={() => navigate('/useref-demo')}>
+            useRef Demo
+        </button>
         <button 
           style={globalStyles.button} 
           onClick={() => navigate('custom-hook-demo')}>
