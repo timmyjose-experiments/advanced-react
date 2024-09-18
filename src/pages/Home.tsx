@@ -1,29 +1,30 @@
 import { useNavigate } from "react-router-dom"
+import { globalStyles } from "../globalStyles"
 
 const Home = () => {
   const navigate = useNavigate()
 
   return (
     <div>
-      <h1>Home</h1>
-      <div style={styles.container}>
-        <button onClick={() => navigate('/usestate-demo')}>
+      <div style={globalStyles.container}>
+        <button 
+          style={globalStyles.button} 
+          onClick={() => navigate('/usestate-demo')}>
           useState Demo
         </button>
-        <button onClick={() => navigate('custom-hook-demo')}>
+        <button
+          style={globalStyles.button}
+          onClick={() => navigate('/usereducer-demo')}>
+            useReducer Demo
+        </button>
+        <button 
+          style={globalStyles.button} 
+          onClick={() => navigate('custom-hook-demo')}>
           Custom Hook Demo
         </button>
       </div>
     </div>
   )
-}
-
-const styles = {
-  container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
 }
 
 export default Home
