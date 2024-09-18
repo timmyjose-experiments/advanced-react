@@ -23,3 +23,13 @@ ul li a:hover {
 ul li a:active {
   color: #00a8ff;
 }
+
+:root {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
+
+.dark-theme {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

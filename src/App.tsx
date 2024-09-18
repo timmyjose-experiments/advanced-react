@@ -8,10 +8,13 @@ import UseRefDemo from './pages/UseRefDemo'
 import UseEffectDemo from './pages/UseEffectDemo'
 import UseMemoDemo from './pages/UseMemo'
 import UseCallbackDemo from './pages/UseCallbackDemo'
+import ThemeContextProvider from './providers/ThemeContextProvider'
+import UseContextDemo from './pages/UseContextDemo'
 
 const App = () => {
   return (
     <>
+    <ThemeContextProvider>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/custom-hook-demo' element={<CustomHookDemo />} />
@@ -21,8 +24,10 @@ const App = () => {
         <Route path='/useeffect-demo' element={<UseEffectDemo />} />
         <Route path='/usememo-demo' element={<UseMemoDemo />} />
         <Route path='/usecallback-demo' element={<UseCallbackDemo />} />
+        <Route path='/usecontext-demo' element={<UseContextDemo />} />
         <Route path='*' element={<NoMatch />} />
       </Routes>
+    </ThemeContextProvider>
     </>
   )
 }

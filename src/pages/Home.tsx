@@ -37,6 +37,11 @@ const Home = () => {
           onClick={() => navigate('/usecallback-demo')}>
             useCallback Demo
         </button>
+        <button
+          style={globalStyles.button}
+          onClick={() => navigate('/usecontext-demo')}>
+            useContext Demo
+        </button>
         <button 
           style={globalStyles.button} 
           onClick={() => navigate('custom-hook-demo')}>
