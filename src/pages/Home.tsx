@@ -22,6 +22,11 @@ const Home = () => {
           onClick={() => navigate('/useref-demo')}>
             useRef Demo
         </button>
+        <button
+          style={globalStyles.button}
+          onClick={() => navigate('/useeffect-demo')}>
+            useEffect Demo
+        </button>
         <button 
           style={globalStyles.button} 
           onClick={() => navigate('custom-hook-demo')}>
